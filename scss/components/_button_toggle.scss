@@ -1,0 +1,32 @@
+@use "./../utils/mixin" as mixin;
+@use "./../utils/variables" as var;
+
+// Estilos para el boton tipo hamburguesa - menu_toggle
+
+.toggle {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  align-self: flex-start;
+  background-color: var.$color-navbar_secundario;
+
+  .menu-toggle {
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: var.$color-navbar_secundario;
+  
+  & span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background-color: #ffffff;
+    margin: 4px 0;
+  }
+}
+}

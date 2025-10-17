@@ -3,27 +3,44 @@
 @use "./../utils/variables" as var;
 
 .header {
-  @include mixin.flex-column(center, center);
+  @include mixin.flex-column(center, center, 1rem);
   width: 100%;
+  max-height: auto;
   background-color: var.$color-navbar_principal;
   border: none;
 
-  a {
-    display: none;
-  }
 
-  .start {
-    @include mixin.flex-row(center, center);
-    gap: 1rem;
+  .header_content {
+    @include mixin.flex-row(space-between, center, 1rem);
     width: 100%;
     background-color: var.$color-navbar_principal;
     border: none;
   }
-  .sub_header {
+
+  .start {
     @include mixin.flex-row(space-between, center, 1rem);
-    gap: 1rem;
     width: 100%;
+    height: auto;
+    background-color: var.$color-navbar_principal;
     border: none;
   }
+
+  .links_header {
+    display: none;
+  }
+
+  .search_bar {
+    display: none;
+  }
+  
+  .search_bar_button {
+    display: none;
+  }
+
+  .little_dots {
+    display: none;
+  }
+
+
 
 } 

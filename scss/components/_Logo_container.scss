@@ -1,0 +1,17 @@
+@use "./../utils/mixin" as mixin;
+@use "./../utils/variables" as var;
+
+// Estilos de logo para Mobile
+.logo_container {
+  @include mixin.flex-row(0, center, 2rem);
+  padding: 0 0.5rem;
+  width: 100%;
+  background-color: var.$color-navbar_principal;
+  border: none;
+  
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+// Estilos de logo para Desktop
