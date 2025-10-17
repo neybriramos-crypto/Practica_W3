@@ -1,0 +1,29 @@
+
+@use "./../utils/mixin" as mixin;
+@use "./../utils/variables" as var;
+
+.header {
+  @include mixin.flex-column(center, center);
+  width: 100%;
+  background-color: var.$color-navbar_principal;
+  border: none;
+
+  a {
+    display: none;
+  }
+
+  .start {
+    @include mixin.flex-row(center, center);
+    gap: 1rem;
+    width: 100%;
+    background-color: var.$color-navbar_principal;
+    border: none;
+  }
+  .sub_header {
+    @include mixin.flex-row(space-between, center, 1rem);
+    gap: 1rem;
+    width: 100%;
+    border: none;
+  }
+
+} 

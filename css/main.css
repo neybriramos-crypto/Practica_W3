@@ -1,0 +1,55 @@
+/*parciales*/
+/*Use de base*/
+/*Estilos del body*/
+body {
+  height: 100vh;
+}
+
+/*Estilo global*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Variables de tipografia y colores*/
+/*Colores*/
+/*Tipografia*/
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+}
+.header a {
+  display: none;
+}
+.header .start {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  gap: 1rem;
+  width: 100%;
+  background-color: #ffffff;
+  border: none;
+}
+.header .sub_header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  gap: 1rem;
+  width: 100%;
+  border: none;
+}
+
+.button_head {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
